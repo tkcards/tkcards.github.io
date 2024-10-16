@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Frontend Project</title>
-    <link href="dist/styles.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-center p-8">
-    <h1 class="text-4xl font-bold text-blue-600">Hello, Tailwind and TypeScript!</h1>
-    <button id="clickMe" class="mt-4 bg-blue-500 text-white font-semibold px-4 py-2 rounded">Click Me</button>
+    <h1 class="text-4xl font-bold text-blue-600 mb-6">Games List</h1>
 
-    <script src="dist/main.js"></script>
+    <!-- Container for the games list -->
+    <div id="gamesList" class="space-y-6">
+        <!-- Games will be dynamically added here -->
+    </div>
+
+    <button id="clickMe" class="mt-8 bg-blue-500 text-white font-semibold px-4 py-2 rounded">Click Me</button>
+
+    <script src="src/main.ts"></script>
 </body>
 </html>
