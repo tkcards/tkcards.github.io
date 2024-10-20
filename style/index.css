@@ -1,0 +1,35 @@
+#title {
+  color: red;
+}
+
+.game_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  width: 80%; /* The button will take 80% of the container width */
+  max-width: 200px; /* But will never exceed 200px */
+  height: auto; /* Height adjusts automatically */
+}
+
+.game_button img {
+  width: 100%; /* The image takes up the full width of the button */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100px; /* Limit the maximum size */
+}
+
+/* Open settings */ 
+.game_content {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

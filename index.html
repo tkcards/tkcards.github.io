@@ -1,21 +1,48 @@
+<!-- =========== tkcards =========== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Frontend Project</title>
-    <link href="src/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Game Rules</title>
+  <link rel="icon" type="image/png" href="src/favicon.png">
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/page.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
-<body class="bg-gray-100 text-center p-8">
-    <h1 class="text-4xl font-bold text-blue-600 mb-6">Games List</h1>
+<!-- html -->
+<body>
+  <div id='title'>
+    <h1>Card Game Rules</h1>
+  </div>
 
-    <!-- Container for the games list -->
-    <div id="gamesList" class="space-y-6">
-        <!-- Games will be dynamically added here -->
+  <div class="game_container">
+    <!-- pablo -->
+    <div class="game">
+      <!-- card -->
+      <button class="game_button pablo_button">
+        <img src="src/squirrel.png" alt="pablo image" class="game_image">
+        Pablo
+      </button>
+      <!-- content -->
+      <div class="game_content pablo_content">PABLO TEST TEXT</div>
     </div>
 
-    <button id="clickMe" class="mt-8 bg-blue-500 text-white font-semibold px-4 py-2 rounded">Click Me</button>
-
-    <script src="src/main.ts"></script>
+    <!-- kcup -->
+    <div class="game">
+      <!-- card -->
+      <button class="game_button kcup_button">
+        <img src="src/squirrel.png" alt="kcup image" class="game_image">
+        King's Cup
+      </button>
+      <!-- content -->
+      <div class="game_content kcup_content">kcupkcup</div>
+    </div>
+  </div>
+    
+    
+  </div>
 </body>
 </html>
