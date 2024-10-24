@@ -34,16 +34,34 @@ body {
 }
 
 .game {
-  border-top: 2px solid white;
-  border-left: 2px solid white;
+  border-top: 2px solid rgb(60,68,56);
+  border-left: 2px solid rgb(60,68,56);
   border-radius: 5px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .game:hover {
-  border-color: rgb(60,68,56); /* Changes border color to green */
+  border-color: white;
 }
+
+@media (hover: none) {
+  .game:hover {
+      border-color: inherit;
+  }
+  .game.selected_game:hover {
+      border-color: white;
+  }
+}
+
+.game.selected_game {
+  border-color: white !important;
+}
+
+.game.selected_game:hover {
+  border-color: white;
+}
+
 
 .game_title {
   margin-left: 10px;

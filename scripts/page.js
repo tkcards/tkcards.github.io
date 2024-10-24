@@ -44,7 +44,7 @@ const games = [
     },
     {
         name: "King's Cup",
-        image: "src/Squirrel.png",
+        image: "src/pictures/kingscup.png",
         alt: "King's Cup Image",
         content: "kcupkcup",
         drink: true
@@ -72,9 +72,9 @@ const games = [
     },
     {
         name: "12.12.24",
-        image: "src/Squirrel.png",
+        image: "src/pictures/12.12.24.png",
         alt: "Happy Birthday Aartie!",
-        content: "Happy 23rd Aartie!<br><br>Love you always,<br>-Tanuj",
+        content: "Happy 23rd Aartie!<br><br>Love ya always,<br>-Tanuj",
         drink: false
     },
 ];
@@ -95,9 +95,9 @@ function createGames() {
             <div class="game_title">${game.name}</div>
             <div class="icon_image">
                 ${game.name === "12.12.24" 
-                    ? `<img src="src/cake.png" alt="Cake Image" class="cake_image">` 
+                    ? `<img src="src/icons/cake.png" alt="Cake Image" class="cake_image">` 
                     : game.drink 
-                        ? `<img src="src/drink.png" alt="Drink Image" class="drink_image">` 
+                        ? `<img src="src/icons/drink.png" alt="Drink Image" class="drink_image">` 
                         : ''}
             </div>
             </button>
@@ -114,12 +114,22 @@ function createGames() {
         // Select game
         button.click(() => {
             $(".game_content").not(contentDiv).hide();
-            contentDiv.toggle(); // Toggle the content visibility on button click
+            
+            if (contentDiv.is(":visible")) {
+                contentDiv.hide();
+                gameDiv.removeClass('selected_game');
+            } else {
+                contentDiv.show();
+                $(".game").removeClass('selected_game');
+                gameDiv.addClass('selected_game');
+            }
+            
         });
     });
 }
 
 // On page load 
 $(document).ready(function () {
-    createGames(); // Create game elements dynamically
+    // Create games
+    createGames(); 
 });
