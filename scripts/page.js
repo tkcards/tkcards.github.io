@@ -30,7 +30,7 @@ const games = [
     },
     {
         name: "Golf",
-        image: "src/Squirrel.png",
+        image: "src/pictures/golf.png",
         alt: "Golf Image",
         content: "Golf text",
         drink: false
@@ -46,7 +46,21 @@ const games = [
         name: "King's Cup",
         image: "src/pictures/kingscup.png",
         alt: "King's Cup Image",
-        content: "kcupkcup",
+        content:
+            "<i>Rules</i><br>Put a large cup; the king's cup, in the center of a table. Each player takes turns drawing cards and following the instructions corresponding to each card. An example of a card would be 'raise your hand to heaven' if you draw a '7'. The last person to do so takes a drink. Games can either end when the last card from the deck is drawn, or when the king's cup has been drunken.<br><br><i>Index</i><br>" +
+            "<li>A - Waterfall: Each player starts drinking at the same time as the person to their left. No player can stop drinking until the person before them stops.</li><br>" +
+            "<li>2 - You: Whoever draws this can choose anyone to take a drink.</li><br>" +
+            "<li>3 - Me: The person who draws this takes a drink.</li><br>" +
+            "<li>4 - Floor: The last person to touch the floor takes a drink.</li><br>" +
+            "<li>5 - Guys: All the guys at the table drink.</li><br>" +
+            "<li>6 - Chicks: All the girls at the table drink.</li><br>" +
+            "<li>7 - Heaven: If you draw this card, raise your hand above you head. Every other player must do so as well. The last person takes a drink.</li><br>" +
+            "<li>8 - Mate: Choose someone to be your mate. For the rest of the game, they drink when you drink.</li><br>" +
+            "<li>9 - Rhyme: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
+            "<li>10 - Categories: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
+            "<li>J - Never Have I Ever: Everyone plays Never Have I Ever.</li><br>" +
+            "<li>Q - Questions: Ask someone a question. That person then asks someone else a question. This continues until someone messes up or fails to ask a question. That person drinks. No question can be repeated.</li><br>" +
+            "<li>K - Set a rule to be followed, (e.g. stand on one foot when you drink, only speak in an accent, etc.). When each of the first 3 Kings is drawn, the person who drew it puts some of their drink into the King's Cup in the center of the table. When the 4th King is drawn, the person who drew it must drink the entire King's Cup.</li><br>",
         drink: true
     },
     {
