@@ -1,10 +1,28 @@
-// Game data
+// Game content
 const games = [
     {
         name: "ERS",
         image: "src/Squirrel.png",
         alt: "ERS Image",
-        content: "ERS Content"
+        content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content "
+    },
+    {
+        name: "Euchre",
+        image: "src/Squirrel.png",
+        alt: "Euchre Image",
+        content: "Lol... no."
+    },
+    {
+        name: "Golf",
+        image: "src/Squirrel.png",
+        alt: "Golf Image",
+        content: "Golf text"
+    },
+    {
+        name: "Hearts",
+        image: "src/Squirrel.png",
+        alt: "Hearts Image",
+        content: "Hearts text"
     },
     {
         name: "King's Cup",
@@ -18,7 +36,24 @@ const games = [
         alt: "Pablo Image",
         content: "PABLO TEST TEXT"
     },
-    
+    {
+        name: "Presidents",
+        image: "src/Squirrel.png",
+        alt: "Presidents Image",
+        content: "Presidents sample"
+    },
+    {
+        name: "Tens and Twos",
+        image: "src/Squirrel.png",
+        alt: "Tens and Twos Image",
+        content: "10s/2s"
+    },
+    {
+        name: "12.12.24",
+        image: "src/Squirrel.png",
+        alt: "Happy Birthday Aartie!",
+        content: "Happy 23rd Aartie!<br><br>Love you always,<br>-Tanuj"
+    },
 ];
 
 // Creates games
@@ -48,6 +83,7 @@ function createGames() {
     
         // Select game
         button.click(() => {
+            $(".game_content").not(contentDiv).hide();
             contentDiv.toggle(); // Toggle the content visibility on button click
         });
     });
@@ -56,30 +92,4 @@ function createGames() {
 // On page load 
 $(document).ready(function () {
     createGames(); // Create game elements dynamically
-
-    /*
-    var pablo_button = $('.pablo_button');
-    var kcup_button = $('.kcup_button');
-    var pablo_content = $('.pablo_content');
-    var kcup_content = $('.kcup_content');
-    var current_game = "";
-
-    // select/unselect pablo 
-    pablo_button.click(function() {
-        if (pablo_content.is(':visible')) {
-            pablo_content.hide();
-        } else {
-            pablo_content.show();
-        }
-    });
-
-    // select/unselect kcup 
-    kcup_button.click(function() {
-        if (kcup_content.is(':visible')) {
-            kcup_content.hide();
-        } else {
-            kcup_content.show();
-        }
-    });
-    */
 });
