@@ -1,58 +1,81 @@
 // Game content
 const games = [
     {
+        name: "10s & 2s",
+        image: "src/Squirrel.png",
+        alt: "10s and 2s Image",
+        content: "Tens and Twos Content",
+        drink: false
+    },
+    {
         name: "ERS",
         image: "src/Squirrel.png",
         alt: "ERS Image",
-        content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content "
+        content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ",
+        drink: false,
     },
     {
         name: "Euchre",
         image: "src/Squirrel.png",
         alt: "Euchre Image",
-        content: "Lol... no."
+        content: "Lol... no.",
+        drink: false
+    },
+    {
+        name: "Death Square",
+        image: "src/Squirrel.png",
+        alt: "Death Square Image",
+        content: "DS Content",
+        drink: true
     },
     {
         name: "Golf",
         image: "src/Squirrel.png",
         alt: "Golf Image",
-        content: "Golf text"
+        content: "Golf text",
+        drink: false
     },
     {
         name: "Hearts",
         image: "src/Squirrel.png",
         alt: "Hearts Image",
-        content: "Hearts text"
+        content: "Hearts text",
+        drink: false
     },
     {
         name: "King's Cup",
         image: "src/Squirrel.png",
         alt: "King's Cup Image",
-        content: "kcupkcup"
+        content: "kcupkcup",
+        drink: true
     },
     {
         name: "Pablo",
         image: "src/Squirrel.png",
         alt: "Pablo Image",
-        content: "PABLO TEST TEXT"
+        content: "PABLO TEST TEXT",
+        drink: false
     },
     {
         name: "Presidents",
         image: "src/Squirrel.png",
         alt: "Presidents Image",
-        content: "Presidents sample"
+        content: "Presidents sample",
+        drink: false
     },
     {
-        name: "Tens and Twos",
+        name: "Ride the Bus",
         image: "src/Squirrel.png",
-        alt: "Tens and Twos Image",
-        content: "10s/2s"
+        alt: "Ride the Bus Image",
+        content: "RTB",
+        drink: true
     },
     {
         name: "12.12.24",
         image: "src/Squirrel.png",
         alt: "Happy Birthday Aartie!",
-        content: "Happy 23rd Aartie!<br><br>Love you always,<br>-Tanuj"
+        content: "Happy 23rd Aartie!<br><br>Love you always,<br>-Tanuj",
+        drink: false
     },
 ];
 
@@ -70,6 +93,13 @@ function createGames() {
             <button class="game_button">
             <img src="${game.image}" alt="${game.alt}" class="game_image">
             <div class="game_title">${game.name}</div>
+            <div class="icon_image">
+                ${game.name === "12.12.24" 
+                    ? `<img src="src/cake.png" alt="Cake Image" class="cake_image">` 
+                    : game.drink 
+                        ? `<img src="src/drink.png" alt="Drink Image" class="drink_image">` 
+                        : ''}
+            </div>
             </button>
         `);
 

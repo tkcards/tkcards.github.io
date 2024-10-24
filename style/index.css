@@ -47,6 +47,7 @@ body {
 
 .game_title {
   margin-left: 10px;
+  margin-right: 10px;
   font-size: clamp(2px, 5vh, 30px);
 }
 
@@ -80,6 +81,11 @@ body {
 
 .game_content {
   margin-left: 10px;
+}
+
+.icon_image {
+  width: 25px;
+  height: 25px;
 }
 
 .hidden {
