@@ -1,15 +1,21 @@
 // Game data
 const games = [
     {
+        name: "ERS",
+        image: "src/Squirrel.png",
+        alt: "ERS Image",
+        content: "ERS Content"
+    },
+    {
         name: "King's Cup",
-        image: "src/squirrel.png",
-        alt: "kcup image",
+        image: "src/Squirrel.png",
+        alt: "King's Cup Image",
         content: "kcupkcup"
     },
     {
         name: "Pablo",
-        image: "src/squirrel.png",
-        alt: "pablo image",
+        image: "src/Squirrel.png",
+        alt: "Pablo Image",
         content: "PABLO TEST TEXT"
     },
     
