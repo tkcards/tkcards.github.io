@@ -1,22 +1,16 @@
 // Game content
 const games = [
     {
-        name: "10s & 2s",
-        image: "src/Squirrel.png",
-        alt: "10s and 2s Image",
-        content: "Tens and Twos Content",
-        drink: false
-    },
-    {
         name: "ERS",
         image: "src/pictures/ers.png",
         alt: "ERS Image",
         content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ",
         drink: false,
     },
+    // Euchre
     {
         name: "Euchre",
-        image: "src/Squirrel.png",
+        image: "src/pictures/euchre.png",
         alt: "Euchre Image",
         content: "Lol... no.",
         drink: false
@@ -66,7 +60,7 @@ const games = [
     },
     {
         name: "Pablo",
-        image: "src/Squirrel.png",
+        image: "src/pictures/pablo.png",
         alt: "Pablo Image",
         content: "PABLO TEST TEXT",
         drink: false
@@ -84,6 +78,13 @@ const games = [
         alt: "Ride the Bus Image",
         content: "RTB",
         drink: true
+    },
+    {
+        name: "Tens & Twos",
+        image: "src/pictures/tensandtwos.png",
+        alt: "Tens & Twos Image",
+        content: "Tens and Twos Content",
+        drink: false
     },
     {
         name: "12.12.24",
