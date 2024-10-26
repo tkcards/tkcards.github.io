@@ -95,7 +95,10 @@ const games = [
 ];
 
 // Birthday message
-const birthday_message = "<br>Test message";
+const birthday_message =
+    "<i><br>Dear Aartie,<br><br></i>" +
+    "<i>How did we end up here...<br></i>" +
+    "<i>...<br></i>";
 
 // Creates games
 function createGames() {
@@ -144,6 +147,9 @@ function createGames() {
                         const birthdayMessage = $(`<div class="birthday_message">${birthday_message}</div>`);
                         contentDiv.append(birthdayMessage);
                     }
+                }
+                else {
+                    contentDiv.find(".birthday_message").remove();
                 }
             });
         }

@@ -120,10 +120,12 @@ body {
 }
 .birthday_input:focus {
   outline:none;
+  border-radius: 0px;
 }
 
 .hidden {
   display: none;
+  border-radius: 0px;
 }
 
 /* footer */
