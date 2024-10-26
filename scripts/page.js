@@ -9,7 +9,7 @@ const games = [
     },
     {
         name: "ERS",
-        image: "src/Squirrel.png",
+        image: "src/pictures/ers.png",
         alt: "ERS Image",
         content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ",
         drink: false,
@@ -42,6 +42,7 @@ const games = [
         content: "Hearts text",
         drink: false
     },
+    // King's Cup
     {
         name: "King's Cup",
         image: "src/pictures/kingscup.png",
@@ -79,7 +80,7 @@ const games = [
     },
     {
         name: "Ride the Bus",
-        image: "src/Squirrel.png",
+        image: "src/pictures/ridethebus.png",
         alt: "Ride the Bus Image",
         content: "RTB",
         drink: true
@@ -88,14 +89,17 @@ const games = [
         name: "12.12.24",
         image: "src/pictures/12.12.24.png",
         alt: "Happy Birthday Aartie!",
-        content: "Happy 23rd Aartie!<br><br>Love ya always,<br>-Tanuj",
+        content: "Happy 23rd Aartie!<br><br>Love ya always,<br>-Tanuj<br><br>",
         drink: false
     },
 ];
 
+// Birthday message
+const birthday_message = "<br>Test message";
+
 // Creates games
 function createGames() {
-    // Games container
+    // variables
     const games_container = $(".games_container");
 
     games.forEach(game => {
@@ -124,6 +128,25 @@ function createGames() {
         gameDiv.append(button);
         gameDiv.append(contentDiv);
         games_container.append(gameDiv);
+
+        // 12.12.24 bonus content
+        if (game.name === "12.12.24") {
+            const inputBox = $('<input type="text" class="birthday_input" placeholder="[our calendar]"/>');
+            
+            // Append input box below the content
+            contentDiv.append(inputBox);
+
+            // Event listener to check for correct code
+            inputBox.on("input", function() {
+                if (inputBox.val().toUpperCase() === "MATCHA") {
+                    // Check if "Congrats!" message already exists to prevent duplicates
+                    if (contentDiv.find(".birthday_message").length === 0) {
+                        const birthdayMessage = $(`<div class="birthday_message">${birthday_message}</div>`);
+                        contentDiv.append(birthdayMessage);
+                    }
+                }
+            });
+        }
     
         // Select game
         button.click(() => {

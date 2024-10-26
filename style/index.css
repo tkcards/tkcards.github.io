@@ -1,3 +1,8 @@
+:root {
+  --green-color: rgb(60,68,56);
+  --grey-color: rgb(26, 30, 32);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 }
 
 body {
-  background-color: rgb(60,68,56);
+  background-color: var(--green-color);
   color: white;
 }
 
@@ -14,7 +19,7 @@ body {
 .header {
   width: 100%;
   height: 10vh; /* 20% of the viewport height */
-  background-color: rgb(60,68,56);
+  background-color: var(--green-color);
   color: white;
   font-size: clamp(2px, 5vh, 30px);
   display: flex;
@@ -28,14 +33,14 @@ body {
 /* content */
 .games_container {
   padding: 20px;
-  background-color: rgb(26, 30, 32);
+  background-color: var(--grey-color);
   display: flex;
   flex-direction: column;
 }
 
 .game {
-  border-top: 2px solid rgb(60,68,56);
-  border-left: 2px solid rgb(60,68,56);
+  border-top: 2px solid var(--green-color);
+  border-left: 2px solid var(--green-color);
   border-radius: 5px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
@@ -74,9 +79,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  background-color: rgb(26, 30, 32);
+  background-color: var(--grey-color);
   color: white;
-  border: 2px solid rgb(26, 30, 32);
+  border: 2px solid var(--grey-color);
   cursor: pointer;
   text-align: center;
   border-radius: 5px;
@@ -106,6 +111,17 @@ body {
   height: 25px;
 }
 
+.birthday_input {
+  border: none;
+  background-color: var(--grey-color);
+  color: white;
+  font-size: 1em;
+  border-bottom: 1px solid white;
+}
+.birthday_input:focus {
+  outline:none;
+}
+
 .hidden {
   display: none;
 }
@@ -114,7 +130,7 @@ body {
 .footer {
   width: 100%;
   height: 1vh; /* 10% of the viewport height */
-  background-color: rgb(60,68,56);
+  background-color: var(--green-color);
   color: white;
   display: flex;
   justify-content: center;
