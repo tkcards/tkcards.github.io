@@ -41,7 +41,8 @@ body {
 .game {
   border-top: 2px solid var(--green-color);
   border-left: 2px solid var(--green-color);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
@@ -123,6 +124,10 @@ body {
 .birthday_input:focus {
   outline:none;
   border-radius: 0px;
+}
+.birthday_input::placeholder {
+  color:white;
+  opacity: 35%;
 }
 
 .hidden {

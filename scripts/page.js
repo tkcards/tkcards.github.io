@@ -23,7 +23,7 @@ const games = [
     },
     {
         name: "Death Square",
-        image: "src/Squirrel.png",
+        image: "src/pictures/dsquare.png",
         alt: "Death Square Image",
         content: "DS Content",
         drink: true
@@ -37,7 +37,7 @@ const games = [
     },
     {
         name: "Hearts",
-        image: "src/Squirrel.png",
+        image: "src/pictures/hearts.png",
         alt: "Hearts Image",
         content: "Hearts text",
         drink: false
@@ -73,7 +73,7 @@ const games = [
     },
     {
         name: "Presidents",
-        image: "src/Squirrel.png",
+        image: "src/pictures/presidents.png",
         alt: "Presidents Image",
         content: "Presidents sample",
         drink: false
@@ -87,7 +87,7 @@ const games = [
     },
     {
         name: "12.12.24",
-        image: "src/pictures/12.12.24.png",
+        image: "src/pictures/birthday.png",
         alt: "Happy Birthday Aartie!",
         content: "Happy 23rd Aartie!<br><br>Love ya always,<br>-Tanuj<br><br>",
         drink: false
@@ -132,7 +132,7 @@ function createGames() {
         gameDiv.append(contentDiv);
         games_container.append(gameDiv);
 
-        // 12.12.24 bonus content
+        // Birthday bonus content
         if (game.name === "12.12.24") {
             const inputBox = $('<input type="text" class="birthday_input" placeholder="[our calendar]"/>');
             
