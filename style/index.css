@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poiret One', sans-serif;
+  font-family: 'Poiret One', serif;
 }
 
 body {
@@ -66,6 +66,11 @@ body {
 
 .game.selected_game:hover {
   border-color: white;
+}
+
+.game.return_border {
+  /*border-color: var(--green-color);*/
+  border-color: red;
 }
 
 
