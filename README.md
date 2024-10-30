@@ -8,3 +8,5 @@ Known bugs:
 - pick better resolution icon images for drink and cake
 
 - make on click display borders not just on hover
+
+- update favicon

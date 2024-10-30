@@ -42,7 +42,9 @@ const games = [
         image: "src/pictures/kingscup.png",
         alt: "King's Cup Image",
         content:
-            "<i>Rules</i><br>Put a large cup; the king's cup, in the center of a table. Each player takes turns drawing cards and following the instructions corresponding to each card. An example of a card would be 'raise your hand to heaven' if you draw a '7'. The last person to do so takes a drink. Games can either end when the last card from the deck is drawn, or when the king's cup has been drunken.<br><br><i>Index</i><br>" +
+            "<i>Game</i><br>" +
+            "Put a large cup; the king's cup, in the center of a table. Each player takes turns drawing cards and following the instructions corresponding to each card. An example of a card would be 'raise your hand to heaven' if you draw a '7'. The last person to do so takes a drink. Games can either end when the last card from the deck is drawn, or when the king's cup has been drunken.<br>" + 
+            "<br><i>Rules</i><br>" +
             "<li>A - Waterfall: Each player starts drinking at the same time as the person to their left. No player can stop drinking until the person before them stops.</li><br>" +
             "<li>2 - You: Whoever draws this can choose anyone to take a drink.</li><br>" +
             "<li>3 - Me: The person who draws this takes a drink.</li><br>" +
@@ -69,7 +71,15 @@ const games = [
         name: "Presidents",
         image: "src/pictures/presidents.png",
         alt: "Presidents Image",
-        content: "Presidents sample",
+        content: "<i>Game</i><br>" +
+        "Evenly distribute the cards among players, leaving jokers out. For the first round, the player with the 3 of spades begins. by playing any single card or set of equal-ranked cards (e.g., three sixes)." +
+        "Each player in turn can either pass out of the round or play a card/set of the same size, with equal or higher rank(s) (e.g., two fours can be beaten by two queens, two tens, or even two other fours, but not a single queen, three tens, or a single four.)" +
+        "The round continues until everyone passes on a play or is skipped with no new cards being added to the pile, after which the highest play wins the 'trick', and the player who played last leads the next round.<br>" +
+        "<br><i>Rules</i><br>" +
+        "<li>Card hierarchy: 3-10 < J-K < A < 2<br></li>" +
+        "<li>Twos are wildcards that can be played on top of any card regardless of the rank or set size, and it automatically wins the player who played it the trick.</li><br>" +
+        "<li>If a player plays a card/set of equal-ranked cards, the subsequent player is skipped, but not out of the round.</li><br>" +
+        "<li>optional, can't end on a 2</li><br>",
         drink: false
     },
     {
@@ -98,7 +108,7 @@ const games = [
 // Birthday message
 const birthday_message =
     "<i><br>Dear Aartie,<br><br></i>" +
-    "<i>How did we end up here...<br></i>" +
+    "<i>How did we end up here lol...<br></i>" +
     "<i>...<br></i>";
 
 // Creates games
@@ -135,7 +145,7 @@ function createGames() {
 
         // Birthday bonus content
         if (game.name === "12.12.24") {
-            const inputBox = $('<input type="text" class="birthday_input" placeholder="[our calendar]"/>');
+            const inputBox = $('<input type="text" class="birthday_input" placeholder="Our calendar"/>');
             
             // Append input box below the content
             contentDiv.append(inputBox);
