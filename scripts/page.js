@@ -1,5 +1,18 @@
 // Game content
 const games = [
+    // Death Square
+    {
+        name: "Death Square",
+        image: "src/pictures/dsquare.png",
+        alt: "Death Square Image",
+        content:
+        "<i>Game (Ben's version)</i><br><br>" +
+        "Deal 16 cards face up in the center and arrange them in a 4x4 grid. These will be the initial piles. Starting with the player to the dealer's left, they must successfully choose a card pile to add a card to and guess whether the next card in the deck will be higher than, lower than, or the same rank as the top card of the pile, three times in a row (Aces are high). " +
+        "If they are successful three times in a row, their turn is over. If the player incorrectly guesses, a count is set to the number of cards in that pile. Starting with the next player, other players will count off from 1 to that number, going as quickly or leisurely as they want. " +
+        "The player who guessed incorrectly must continuously drink until the count has been reached, or someone messes up the count. If anyone loses count, says the wrong number, goes over the assigned count, or in any context speaks a number that's not in sequence, the turn immediately ends and skips to them. " +
+        "If the drinker finishes their drink before the count ends, the turn passes immediately to the person who was supposed to count off next. If the count is successfully passed, the drinker stops drinking and must start their turn over again and guess correctly three times. When the deck has been dealt, pick the column or row with the fewest number of cards and shuffle them face down as the new deck.",
+        drink: true
+    },
     // ERS
     {
         name: "ERS",
@@ -32,19 +45,6 @@ const games = [
         alt: "Euchre Image",
         content: "Lol... no.",
         drink: false
-    },
-    // Death Square
-    {
-        name: "Death Square",
-        image: "src/pictures/dsquare.png",
-        alt: "Death Square Image",
-        content:
-        "<i>Game (Ben's version)</i><br><br>" +
-        "Deal 16 cards face up in the center and arrange them in a 4x4 grid. These will be the initial piles. Starting with the player to the dealer's left, they must successfully choose a card pile to add a card to and guess whether the next card in the deck will be higher than, lower than, or the same rank as the top card of the pile, three times in a row (Aces are high). " +
-        "If they are successful three times in a row, their turn is over. If the player incorrectly guesses, a count is set to the number of cards in that pile. Starting with the next player, other players will count off from 1 to that number, going as quickly or leisurely as they want. " +
-        "The player who guessed incorrectly must continuously drink until the count has been reached, or someone messes up the count. If anyone loses count, says the wrong number, goes over the assigned count, or in any context speaks a number that's not in sequence, the turn immediately ends and skips to them. " +
-        "If the drinker finishes their drink before the count ends, the turn passes immediately to the person who was supposed to count off next. If the count is successfully passed, the drinker stops drinking and must start their turn over again and guess correctly three times. When the deck has been dealt, pick the column or row with the fewest number of cards and shuffle them face down as the new deck.",
-        drink: true
     },
     // Golf
     {
@@ -212,9 +212,20 @@ const birthday_message =
 
 // Creates games
 function createGames() {
-    // variables
+    // Variables
     const games_container = $(".games_container");
 
+    // Sort games
+    games.sort((a, b) => {
+        const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        const isLetter = char => /[a-z]/.test(char); // Check if the first character is a letter
+        const isA_Letter = isLetter(nameA[0]);
+        const isB_Letter = isLetter(nameB[0]);
+        if (isA_Letter && !isB_Letter) return -1; // Letters come before numbers
+        if (!isA_Letter && isB_Letter) return 1;  // Numbers come after letters
+        return nameA.localeCompare(nameB); // Standard locale comparison for same types
+    });
     games.forEach(game => {
         // Create game
         const gameDiv = $('<div class="game"></div>');
@@ -252,7 +263,7 @@ function createGames() {
             // Event listener to check for correct code
             inputBox.on("input", function() {
                 if (inputBox.val().toUpperCase() === "MATCHA") {
-                    // Check if "Congrats!" message already exists to prevent duplicates
+                    // Check if message already exists to prevent duplicates
                     if (contentDiv.find(".birthday_message").length === 0) {
                         const birthdayMessage = $(`<div class="birthday_message">${birthday_message}</div>`);
                         contentDiv.append(birthdayMessage);
@@ -283,6 +294,5 @@ function createGames() {
 
 // On page load 
 $(document).ready(function () {
-    // Create games
     createGames(); 
 });
