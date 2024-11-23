@@ -201,9 +201,8 @@ const games = [
 const birthday_message =
     "<i><br>Dear Aartie,<br><br></i>" +
     "<i>How did we end up here lol...</i><br><br>" +
-    "<i>With you, everything comes so naturally. Usually, the words find themselves, and we're 'blessed' with the most verbose I love you ever printed. </i>" +
-    "<i>But right now, my fingers are still. Words don't do you justice.</i><br><br>" +
-    "<i>For what little it's worth, you are the most beautiful intelligent kind-hearted passionate lively person I have ever met. </i>" +
+    "<i>With you, everything comes so naturally. Usually, the words find themselves, and we're 'blessed' with the most verbose I love you ever printed, but right now, my fingers are still. </i>" +
+    "<i>Words will never do you justice, but for what little it's worth, you are the most beautiful intelligent kind-hearted passionate lively person I have ever met. </i>" +
     "<i>Thank you for finding your way into my world. Thank you for inspiring me to better myself. Thank you for making the late night grinds, stupid jokes, and midnight meals so much more special.</i><br><br>" +
     "<i>To my best friend...</i><br><br>" +
     "<i>Happy birthday!</i><br><br>" +
