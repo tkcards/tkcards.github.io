@@ -16,7 +16,7 @@ const games = [
         "<br><i>Rules</i><br><br>" +
         "<li>Double - Slap when two cards of the same value are played consecutively (e.g., 5, 5).</li><br>" +
         "<li>Sandwich - Slap when two cards of the same value are separated by one card of a different value (e.g., 5, 7, 5).</li>" +
-        "<br><i>Optional Rules</i><br><br>" +
+        "<br><i>Optional</i><br><br>" +
         "<li>Top/Bottom - Slap when a card matches the first card of the current pile (e.g., 8 at the bottom and another 8 played later).</li><br>" +
         "<li>Fifteen - Slap when two cards, played consecutively, add up to 15, with face cards and Aces counting as ten (e.g., 7, 8 or A, 5).</li><br>" +
         "<li>Jokers - Slap when a joker is played, if jokers are included (decided before the game begins).</li><br>" +
@@ -166,6 +166,7 @@ const games = [
         "If you guess incorrectly, you have to take the respective (pass 1: 1 drink, pass 2: 2 drinks, pass 3: 4 drinks, pass 4: 8 drinks) amount of drinks associated with your round and start over. You cannot leave the bus until you've guessed 4 times in a row correctly. If the deck runs out, you reshuffle and continue.<br>",
         drink: true
     },
+    // Tens & Twos
     {
         name: "Tens & Twos",
         image: "src/pictures/tensandtwos.png",
@@ -180,7 +181,7 @@ const games = [
         "<i>Rules</i><br><br>" +
         "<li>2 - Can be played on any card, and as the lowest rank card, any card can be played on top of it (e.g. Q, 2, 4).</li><br>" +
         "<li>10 - Follows the conventional rank, but when played, clears the entire deck from the game (e.g. 9, 10, clear).</li><br>" +
-        "<br><i>Optional Rules</i><br><br>" +
+        "<br><i>Optional</i><br><br>" +
         "<li>7 - Follows the conventional rank, but when played, the following player must play a card equal to or lower than a 7 instead of equal to or higher.</li><br>" +
         "<li>Playing the same card as the one on the deck skips the next player's turn.</li>",
 
