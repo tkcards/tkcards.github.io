@@ -218,13 +218,15 @@ function createGames() {
     games.sort((a, b) => {
         const nameA = a.name.toLowerCase();
         const nameB = b.name.toLowerCase();
-        const isLetter = char => /[a-z]/.test(char); // Check if the first character is a letter
+        const isLetter = char => /[a-z]/.test(char);
         const isA_Letter = isLetter(nameA[0]);
         const isB_Letter = isLetter(nameB[0]);
-        if (isA_Letter && !isB_Letter) return -1; // Letters come before numbers
-        if (!isA_Letter && isB_Letter) return 1;  // Numbers come after letters
-        return nameA.localeCompare(nameB); // Standard locale comparison for same types
+        if (isA_Letter && !isB_Letter) return -1;
+        if (!isA_Letter && isB_Letter) return 1;
+        return nameA.localeCompare(nameB);
     });
+
+    // Loop through games
     games.forEach(game => {
         // Create game
         const gameDiv = $('<div class="game"></div>');
