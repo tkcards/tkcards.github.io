@@ -67,7 +67,19 @@ const games = [
         name: "Hearts",
         image: "src/pictures/hearts.png",
         alt: "Hearts Image",
-        content: "Hearts text",
+        content:
+        "<i>Game</i><br><br>" +
+        "Cards are dealt one at a time, face down, in a clockwise direction. In a four-player game, each player receives 13 cards. For a three-player game, the 2 of diamonds is removed, and each player is dealt 17 cards. In a five-player game, the 2 of clubs is removed so that each player receives 10 cards. " +
+        "The player holding the 2 of clubs after the passing phase makes the opening lead. If the 2 of clubs has been removed (as in a three-player game), the 3 of clubs is led instead. " +
+        "Players must follow the suit of the card that is led if possible. If a player cannot follow suit, they may discard a card from another suit. However, during the first trick, if a player has no clubs, they may not discard a heart or the queen of spades. The highest card of the suit led wins the trick, and the winner of that trick leads the next one. There is no trump suit. " +
+        "The winner of each trick collects the cards and places them face down. Hearts cannot be led until a heart or the queen of spades has been discarded. The queen does not need to be discarded at the first opportunity. However, the queen of spades can be led at any time. At the end of each hand, players count the hearts they have taken and the queen of spades, if applicable. " +
+        "The goal of the game is to finish with the lowest score. The game ends when a player reaches or exceeds the agreed-upon score (commonly 100 points, though some play to 50). The player with the lowest score at the end of the game is declared the winner.<br>" +
+        "<br><i>Rules</i><br><br>" +
+        "<li>Card values: Hearts (1), Queen of Spades (13)</li><br>" +
+        "<li>If a player takes all 13 hearts and the queen of spades in a single hand, they score zero, and each of their opponents scores an additional 26 points.</li><br>" +
+        "<li>The total score for all players combined must equal a multiple of 26 points for each hand hand.</li><br>" +
+        "<li>The game is typically played until a player reaches 100 points or more (some play to 50).</li><br>",
+
         drink: false
     },
     // King's Cup
@@ -150,11 +162,12 @@ const games = [
         content: "Tens and Twos Content",
         drink: false
     },
+    // 12.12
     {
         name: "12.12.24",
         image: "src/pictures/birthday.png",
         alt: "Happy Birthday Aartie!",
-        content: "A calendar, drink, and flavor.<br><br>",
+        content: "A calendar, album, and <i>flavor</i>...<br><br>",
         drink: false
     },
 ];
@@ -164,9 +177,9 @@ const birthday_message =
     "<i><br>Dear Aartie,<br><br></i>" +
     "<i>How did we end up here lol...</i><br><br>" +
     "<i>With you, everything comes so naturally. Usually, the words find themselves, and we're 'blessed' with the most verbose I love you ever printed. </i>" +
-    "<i>But right now, my fingers are still. For the first time, I understand what people mean, when they say words can't express the way I feel about you.</i><br><br>" +
-    "<i>For what little justice it does to the truth, you are the most intelligent kind-hearted passionate lively beautiful person I have ever met. </i>" +
-    "<i>Thank you for finding your way into my world. Thank you for inspiring me to better myself. Thank you for making the late night grinds, stupid jokes, midnight meals, and outdoor adventuring so much more special.</i><br><br>" +
+    "<i>But right now, my fingers are still. Words don't do you justice.</i><br><br>" +
+    "<i>For what little it's worth, you are the most beautiful intelligent kind-hearted passionate lively person I have ever met. </i>" +
+    "<i>Thank you for finding your way into my world. Thank you for inspiring me to better myself. Thank you for making the late night grinds, stupid jokes, and midnight meals so much more special.</i><br><br>" +
     "<i>To my best friend...</i><br><br>" +
     "<i>Happy birthday!</i><br><br>" +
     "<i>She's 23! Not really sure what you unlock with this one to be honest, but I'm so excited to see what this year holds!</i><br><br>" +
