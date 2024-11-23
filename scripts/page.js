@@ -39,7 +39,7 @@ const games = [
         image: "src/pictures/dsquare.png",
         alt: "Death Square Image",
         content:
-        "<i>Game</i><br><br>" +
+        "<i>Game (Ben's version)</i><br><br>" +
         "Deal 16 cards face up in the center and arrange them in a 4x4 grid. These will be the initial piles. Starting with the player to the dealer's left, they must successfully choose a card pile to add a card to and guess whether the next card in the deck will be higher than, lower than, or the same rank as the top card of the pile, three times in a row (Aces are high). " +
         "If they are successful three times in a row, their turn is over. If the player incorrectly guesses, a count is set to the number of cards in that pile. Starting with the next player, other players will count off from 1 to that number, going as quickly or leisurely as they want. " +
         "The player who guessed incorrectly must continuously drink until the count has been reached, or someone messes up the count. If anyone loses count, says the wrong number, goes over the assigned count, or in any context speaks a number that's not in sequence, the turn immediately ends and skips to them. " +
@@ -63,6 +63,7 @@ const games = [
 
         drink: false
     },
+    // Hearts
     {
         name: "Hearts",
         image: "src/pictures/hearts.png",
@@ -88,22 +89,22 @@ const games = [
         image: "src/pictures/kingscup.png",
         alt: "King's Cup Image",
         content:
-            "<i>Game</i><br><br>" +
-            "Put a large cup; the king's cup, in the center of a table. Each player takes turns drawing cards and following the actions corresponding to each card. An example of a card would be 'raise your hand to heaven' if you draw a 7. The last person to do so takes a drink. Games can either end when the last card from the deck is drawn, or when the king's cup has been drunken.<br>" + 
-            "<br><i>Actions</i><br><br>" +
-            "<li>A - Waterfall: Each player starts drinking at the same time as the person to their left. No player can stop drinking until the person before them stops.</li><br>" +
-            "<li>2 - You: Whoever draws this can choose anyone to take a drink.</li><br>" +
-            "<li>3 - Me: The person who draws this takes a drink.</li><br>" +
-            "<li>4 - Floor: The last person to touch the floor takes a drink.</li><br>" +
-            "<li>5 - Guys: All the guys at the table drink.</li><br>" +
-            "<li>6 - Chicks: All the girls at the table drink.</li><br>" +
-            "<li>7 - Heaven: If you draw this card, raise your hand above you head. Every other player must do so as well. The last person takes a drink.</li><br>" +
-            "<li>8 - Mate: Choose someone to be your mate. For the rest of the game, they drink when you drink.</li><br>" +
-            "<li>9 - Rhyme: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
-            "<li>10 - Categories: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
-            "<li>J - Never Have I Ever: Everyone plays Never Have I Ever.</li><br>" +
-            "<li>Q - Questions: Ask someone a question. That person then asks someone else a question. This continues until someone messes up or fails to ask a question. That person drinks. No question can be repeated.</li><br>" +
-            "<li>K - Set a rule to be followed, (e.g. stand on one foot when you drink, only speak in an accent, etc.). When each of the first 3 Kings is drawn, the person who drew it puts some of their drink into the King's Cup in the center of the table. When the 4th King is drawn, the person who drew it must drink the entire King's Cup.</li>",
+        "<i>Game</i><br><br>" +
+        "Put a large cup; the king's cup, in the center of a table. Each player takes turns drawing cards and following the actions corresponding to each card. An example of a card would be 'raise your hand to heaven' if you draw a 7. The last person to do so takes a drink. Games can either end when the last card from the deck is drawn, or when the king's cup has been drunken.<br>" + 
+        "<br><i>Actions</i><br><br>" +
+        "<li>A - Waterfall: Each player starts drinking at the same time as the person to their left. No player can stop drinking until the person before them stops.</li><br>" +
+        "<li>2 - You: Whoever draws this can choose anyone to take a drink.</li><br>" +
+        "<li>3 - Me: The person who draws this takes a drink.</li><br>" +
+        "<li>4 - Floor: The last person to touch the floor takes a drink.</li><br>" +
+        "<li>5 - Guys: All the guys at the table drink.</li><br>" +
+        "<li>6 - Chicks: All the girls at the table drink.</li><br>" +
+        "<li>7 - Heaven: If you draw this card, raise your hand above you head. Every other player must do so as well. The last person takes a drink.</li><br>" +
+        "<li>8 - Mate: Choose someone to be your mate. For the rest of the game, they drink when you drink.</li><br>" +
+        "<li>9 - Rhyme: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
+        "<li>10 - Categories: You say a word, then the person to your right has to say a word that rhymes. This continues until someone can't think of a word. That person takes a drink. You can't reuse words.</li><br>" +
+        "<li>J - Never Have I Ever: Everyone plays Never Have I Ever.</li><br>" +
+        "<li>Q - Questions: Ask someone a question. That person then asks someone else a question. This continues until someone messes up or fails to ask a question. That person drinks. No question can be repeated.</li><br>" +
+        "<li>K - Set a rule to be followed, (e.g. stand on one foot when you drink, only speak in an accent, etc.). When each of the first 3 Kings is drawn, the person who drew it puts some of their drink into the King's Cup in the center of the table. When the 4th King is drawn, the person who drew it must drink the entire King's Cup.</li>",
         drink: true
     },
     // Pablo
@@ -111,7 +112,7 @@ const games = [
         name: "Pablo",
         image: "src/pictures/pablo.png",
         alt: "Pablo Image",
-        content: "<i>Game</i><br><br>" +
+        content: "<i>Game (Rithi's version)</i><br><br>" +
         "Deal 4 cards from the deck, including jokers, face down to each player. Everyone arranges their cards into two rows of two and secretly looks at the bottom (closest) two cards to them. " +
         "Choose someone to start. Each player on their turn draws a card from the remaining deck. Players may play the card they picked or replace one of their current face down cards with it and play the face down card. " +
         "Playing a card entails adding it to the discard pile and optionally performing one of the rules associated with the card if any. " +
@@ -148,6 +149,7 @@ const games = [
         "<li>If any player at any point has the cards of a rank to complete a set on the stack (e.g. all four 7s, all four queens, etc.), then they may place the cards down, regardless of turn or the trick's number of cards, before the game continues and win the trick.</li>",
         drink: false
     },
+    // Ride the Bus
     {
         name: "Ride the Bus",
         image: "src/pictures/ridethebus.png",
@@ -168,7 +170,20 @@ const games = [
         name: "Tens & Twos",
         image: "src/pictures/tensandtwos.png",
         alt: "Tens & Twos Image",
-        content: "Tens and Twos Content",
+        content:
+        "<i>Game (Emma's version)</i><br><br>" +
+        "The game can be played with one or more decks. The game starts with each player being dealt 3 face-down cards and 3 face-up cards, placed on top of each face-down card. Additionally, each player is dealt a hand of 5 cards (these numbers can be changed if needed). " +
+        "The remaining cards are put into a face-down pile in the center. Each player can optionally swap one of their face-up cards for a card from their hand. The game starts with the player with the lowest rank card (excluding 2s, and clubs is the lowest suit for tiebreakers) playing a card from their hand. " +
+        "In the beginning, if there are still cards leftover from the deck, players must pick up a card after every turn, until that deck is gone. The next player has to play a card with the same or higher value. " +
+        "If the player cannot play a valid next card, then they may play an invalid card (important for getting rid of player's board cards) and pick up the entire played cards deck and add it to their hand. If a player has no hand, they may play face-up cards from their board. If a player has no hand and no face-up cards, they may play face-down cards. " +
+        "You win the game when you have no cards at the end of your turn. Other players can keep playing even after winners have been declared.<br><br>" +
+        "<i>Rules</i><br><br>" +
+        "<li>2 - Can be played on any card, and as the lowest rank card, any card can be played on top of it (e.g. Q, 2, 4).</li><br>" +
+        "<li>10 - Follows the conventional rank, but when played, clears the entire deck from the game (e.g. 9, 10, clear).</li><br>" +
+        "<br><i>Optional Rules</i><br><br>" +
+        "<li>7 - Follows the conventional rank, but when played, the following player must play a card equal to or lower than a 7 instead of equal to or higher.</li><br>" +
+        "<li>Playing the same card as the one on the deck skips the next player's turn.</li>",
+
         drink: false
     },
     // 12.12
