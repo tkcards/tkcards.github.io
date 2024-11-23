@@ -46,11 +46,21 @@ const games = [
         "If the drinker finishes their drink before the count ends, the turn passes immediately to the person who was supposed to count off next. If the count is successfully passed, the drinker stops drinking and must start their turn over again and guess correctly three times. When the deck has been dealt, pick the column or row with the fewest number of cards and shuffle them face down as the new deck.",
         drink: true
     },
+    // Golf
     {
         name: "Golf",
         image: "src/pictures/golf.png",
         alt: "Golf Image",
-        content: "Golf text",
+        content:
+        "<i>Game</i><br><br>" +
+        "Each player is dealt 6 cards face down from the deck. The remaining cards are placed in a face-down stockpile, and the top card is flipped over to begin the discard pile beside it. Players arrange their 6 cards in two rows of three in front of them and turn two of these cards face-up. The other four cards remain face down and cannot be looked at. " +
+        "The goal of the game is to have the lowest total value of cards in front of you by swapping them for cards of lesser value or pairing them with cards of the same rank. " +
+        "Starting with the player to the dealer's left, players take turns drawing a single card from either the stockpile or the discard pile. The drawn card can either be swapped for one of the player's 6 cards or discarded. If swapped with a face-down card, the new card remains face up. The round ends when all of a player's cards are turned face up. " +
+        "A complete game consists of nine 'holes' (deals). The player with the lowest total score at the end of all nine holes wins.<br>" +
+        "<br><i>Rules</i><br><br>" +
+        "<li>Card values: 2 (-2), King (0), Ace (1), 3-10 (value), Jack-Queen (10).</li><br>" +
+        "<li>A pair of equal cards in the same column scores zero points for the column (even if the equal cards are 2s).</li>",
+
         drink: false
     },
     {
@@ -95,7 +105,7 @@ const games = [
         "Playing a card entails adding it to the discard pile and optionally performing one of the rules associated with the card if any. " +
         "The goal is to have the lowest possible total card value at the end of the game. At the end of any player's turn, they may call 'Pablo,' and their cards cannot be peaked at or swapped. Each other player has one more turn to play, then the game ends, everyone turns up their cards, and sums their totals.<br>" +
         "<br><i>Rules</i><br><br>" +
-        "<li>Card values: Red King (-2), Joker (0), Ace (1), 2-10 (value), Jack (11), Queen (12), Black King (13)</li><br>" +
+        "<li>Card values: Red King (-2), Joker (0), Ace (1), 2-10 (value), Jack (11), Queen (12), Black King (13).</li><br>" +
         "<li>When a card is played, any player may slap any face down card from anyone's board. The slapped card is turned up to see if it matches the played card. If a player slaps their own card and correctly matches the played card, they play and get rid of their card, allowing them to take any action associated with the card as well. If you slap another player's card and simillarly it matches, that player is dealt a new face down card that's added to their board. Any incorrect slaps result in the slapping player's being dealt a new face down card to their board.</li>" +
         "<br><i>Optional</i><br><br>" +
         "<li>Only the first slap counts each round counts.</li>" +
