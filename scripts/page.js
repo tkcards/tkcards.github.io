@@ -4,7 +4,24 @@ const games = [
         name: "ERS",
         image: "src/pictures/ers.png",
         alt: "ERS Image",
-        content: "ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ERS Content ",
+        content:
+        "<i>Game</i><br><br>" +
+        "Deal the cards face down, one at a time, to each player until all are distributed evenly. Without looking at their cards, players should arrange their hands into a face-down pile. Starting with the player to the dealer's left, each player takes turns flipping the top card from their pile face-up into the center. " +
+        "If the card played is a number card, the next player continues the sequence by playing their card. This process repeats until someone plays a face card or an Ace (J, Q, K, or A). " +
+        "When a face card or Ace is played, the next player in the rotation must respond with another face card or Ace for the game to proceed in the respective number of tries. If a Jack is played, the next player has 1 chance to put down a face card or an Ace (Queen: 2, King: 3, Ace: 4) If they fail to do so within their turn, the person who last played a face card or Ace wins the pile and begins the next round. " +
+        "The slap rule overrides the face card and Ace mechanic. When a slap condition occurs, the first player to slap the pile wins the round and collects the cards. " +
+        "If someone slaps the pile when it's not slappable, they must add one card from their hand to the bottom of the pile face up. " +
+        "Players without cards can stay in the game by slapping in to collect cards. The game continues until one player wins by claiming all the cards.<br>" +
+        "<br><i>Rules</i><br><br>" +
+        "<li>Double - Slap when two cards of the same value are played consecutively (e.g., 5, 5).</li><br>" +
+        "<li>Sandwich - Slap when two cards of the same value are separated by one card of a different value (e.g., 5, 7, 5).</li>" +
+        "<br><i>Optional Rules</i><br><br>" +
+        "<li>Top/Bottom - Slap when a card matches the first card of the current pile (e.g., 8 at the bottom and another 8 played later).</li><br>" +
+        "<li>Fifteen - Slap when two cards, played consecutively, add up to 15, with face cards and Aces counting as ten (e.g., 7, 8 or A, 5).</li><br>" +
+        "<li>Jokers - Slap when a joker is played, if jokers are included (decided before the game begins).</li><br>" +
+        "<li>Four in a Row - Slap when four cards in a sequence are played in ascending or descending order (e.g., 5, 6, 7, 8 or Q, K, A, 2).</li><br>" +
+        "<li>Marriage - When a queen is played directly above or below a king in the pile (e.g., Q, K or K, Q).</li>",
+
         drink: false,
     },
     // Euchre
