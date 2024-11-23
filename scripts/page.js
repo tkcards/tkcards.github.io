@@ -1,5 +1,6 @@
 // Game content
 const games = [
+    // ERS
     {
         name: "ERS",
         image: "src/pictures/ers.png",
@@ -32,11 +33,17 @@ const games = [
         content: "Lol... no.",
         drink: false
     },
+    // Death Square
     {
         name: "Death Square",
         image: "src/pictures/dsquare.png",
         alt: "Death Square Image",
-        content: "DS Content",
+        content:
+        "<i>Game</i><br><br>" +
+        "Deal 16 cards face up in the center and arrange them in a 4x4 grid. These will be the initial piles. Starting with the player to the dealer's left, they must successfully choose a card pile to add a card to and guess whether the next card in the deck will be higher than, lower than, or the same rank as the top card of the pile, three times in a row (Aces are high). " +
+        "If they are successful three times in a row, their turn is over. If the player incorrectly guesses, a count is set to the number of cards in that pile. Starting with the next player, other players will count off from 1 to that number, going as quickly or leisurely as they want. " +
+        "The player who guessed incorrectly must continuously drink until the count has been reached, or someone messes up the count. If anyone loses count, says the wrong number, goes over the assigned count, or in any context speaks a number that's not in sequence, the turn immediately ends and skips to them. " +
+        "If the drinker finishes their drink before the count ends, the turn passes immediately to the person who was supposed to count off next. If the count is successfully passed, the drinker stops drinking and must start their turn over again and guess correctly three times. When the deck has been dealt, pick the column or row with the fewest number of cards and shuffle them face down as the new deck.",
         drink: true
     },
     {
