@@ -152,7 +152,16 @@ const games = [
         name: "Ride the Bus",
         image: "src/pictures/ridethebus.png",
         alt: "Ride the Bus Image",
-        content: "RTB",
+        content:
+        "<i>Game (Alex's version)</i><br><br>" +
+        "Part 1) Everyone is dealt four cards, arranged face down in a line. Starting with the player to the dealer's left, in the first pass, guess what the leftmost card's color is. " +
+        "In pass 2, guess whether the next card's rank is higher than, lower than, or the same as the first card's. In pass 3, guess whether the next card's rank is in between (inclusive) or outside of the first two cards' range. " +
+        "In pass 4, guess the suit of the final card. If you guess correctly in pass 1, you give out 1 drink (pass 2: 2 drinks, pass 3: 4 drinks, pass 4: 8 drinks), to anyone in any split you'd like. Similarly, if you guess incorrectly, you take the respective amount of drinks.<br><br>" +
+        "Part 2) With the remaining deck, deal 8 face-down cards in two rows of four in the center. You will hope to get rid of your four face-up cards to avoid riding the bus. This component of the game is entirely random. " +
+        "In the first pass, the dealer will start by flipping up the leftmost column of two cards. If you have cards with the same rank, you will slap them to discard them. For each slapped card, if it matches the top flipped-up card, you can give 1 drink. " +
+        "If it matches the bottom flipped-up card, you take 1 drink. This process is repeated for passes 2, 3, and 4 (pass 2: 2 drinks, pass 3: 4 drinks, pass 4: 8 drinks) until all center cards are flipped up.<br><br>" +
+        "Part 3) The player(s) with the most remaining cards left (highest total rank count in the event of a tie) will ride the bus. All cards are shuffled into a face-down deck. Similar to part 1, the rider must guess 4 times in a row correctly (first: red or black, second: over/under, third: in-between/outside, fourth: suit). " +
+        "If you guess incorrectly, you have to take the respective (pass 1: 1 drink, pass 2: 2 drinks, pass 3: 4 drinks, pass 4: 8 drinks) amount of drinks associated with your round and start over. You cannot leave the bus until you've guessed 4 times in a row correctly. If the deck runs out, you reshuffle and continue.<br>",
         drink: true
     },
     {
